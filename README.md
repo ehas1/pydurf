@@ -1,11 +1,9 @@
-# PyDurf
-Like Python speaking Python, with two modes.
-
 ## About PyDurf
 
 Python esoteric programming using len(), bool(), and list operations -- inspired by PyFuck 
 
 PyDurf is an esoteric Python dialect that generates valid Python code using only builtin functions and a minimal character set. It's inspired by @wanquizhu but takes a different approach by leveraging Python's builtin function string representations. It's been a ton of fun exploring this and I hope you find it enjoyable. 
+
 
 ## Overview
 
@@ -106,70 +104,39 @@ Advanced encoding (20 chars):
 - Efficiency: 3.6x shorter than basic encoding
 ```
 
-### 3. Unicode Support
-```python
-# Encoding: "Hello 👋 World 🌍"
-Both methods handle Unicode characters seamlessly:
-- Basic encoding uses chr() with the correct Unicode values
-- Advanced encoding falls back to basic encoding for non-ASCII chars
-- Both produce identical output when evaluated
-```
+### Live Example
 
-### 4. Full Alphabet Test
-```python
-# Encoding: "abcdefghijklmnopqrstuvwxyz"
+Here's what happens when we encode text using PyDurf:
+
+```
+PyDurf Encoding Examples
+==================================================
+
+Encoding: 'hello'
+==================================================
+
 Basic encoding (7 chars):
-- Code length: 8,852 chars
-- Unique chars: 12
-- Consistent length per character
+Code length: 1892 chars
+Unique chars: 7
+Code: chr(len([[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+[],[],[],[],[],[]])) + ...
 
 Advanced encoding (20 chars):
-- Code length: 4,158 chars
-- Unique chars: 19
-- 2.1x more efficient than basic encoding
+Code length: 892 chars
+Unique chars: 18
+Code: str(hash)[len([[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]])] + 
+str(type)[len([[],[],[],[],[],[],[],[],[],[],[]])] + ...
+
+Result: 'hello'
+
+Comparison:
+Basic encoding is 2.1x longer than advanced
 ```
 
-### 5. Mixed Content
-```python
-# Encoding: "print('Hello, World!')"
-Demonstrates handling of:
-- Mixed case letters
-- Punctuation
-- Special characters
-- Nested quotes
-Both methods produce valid, executable Python code
-```
 
-### Efficiency Analysis
-
-1. **Code Length Ratio**
-   - Simple text: Advanced is 2-3x shorter
-   - Programming keywords: Advanced is 3-4x shorter
-   - Full alphabet: Advanced is 2.1x shorter
-   - Special characters: Similar ratios for both methods
-
-2. **Character Set Usage**
-   - Basic encoding: Consistently uses 7-12 chars
-   - Advanced encoding: Uses 18-20 chars
-   - Trade-off: Character set size vs code length
-
-
-## Usage
-
-```python
-from pydurf import PyDurf
-
-# Basic encoding (7 characters)
-text = "Hello"
-basic = PyDurf.encode(text)
-print(eval(basic))  # Outputs: Hello
-
-# Advanced encoding (20 characters)
-advanced = PyDurf.encode_advanced(text)
-print(eval(advanced))  # Outputs: Hello
-```
-
-## Why PyDurf?
+## Why did I make PyDurf?
 
 1. **Educational Value**
    - I like the name and taught me a lot
@@ -178,9 +145,6 @@ print(eval(advanced))  # Outputs: Hello
    - Two levels of esotericism (7 chars vs 20 chars)
    - Different approach from traditional esoteric languages
 
-3. **Practical Applications**
-   - String generation with limited character set
-   - Python AST manipulation examples
 
 ## License
 
