@@ -1,13 +1,13 @@
-## About PyDurf
+## About pydurf
 
-Python esoteric programming using len(), bool(), and list operations -- inspired by PyFuck 
+Python esoteric programming using len(), bool(), and list operations -- inspired by Wanqui Zhu
 
 PyDurf is an esoteric Python dialect that generates valid Python code using only builtin functions and a minimal character set. It's inspired by @wanquizhu but takes a different approach by leveraging Python's builtin function string representations. It's been a ton of fun exploring this and I hope you find it enjoyable. 
 
 
 ## Overview
 
-PyDurf offers two encoding methods:
+pydurf offers two encoding methods:
 
 ### 1. Basic Encoding (Minimal)
 - Uses only 7 unique characters: `()[]+,[]`
@@ -109,7 +109,7 @@ Advanced encoding (20 chars):
 Here's what happens when we encode text using PyDurf:
 
 ```
-PyDurf Encoding Examples
+pydurf Encoding Examples
 ==================================================
 
 Encoding: 'hello'
@@ -136,7 +136,7 @@ Basic encoding is 2.1x longer than advanced
 ```
 
 
-## Why did I make PyDurf?
+## Why did I make pydurf?
 
 1. **Educational Value**
    - I like the name and taught me a lot
