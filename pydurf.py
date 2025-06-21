@@ -30,14 +30,7 @@ class PyDurf:
             
         Returns:
             str: Python expression that evaluates to n
-            
-        Examples:
-            >>> PyDurf.get_digit(0)
-            'len([])'
-            >>> PyDurf.get_digit(1)
-            'bool([])'
-            >>> PyDurf.get_digit(2)
-            'len([[],[]]])'
+        
         """
         if n < 0:
             raise ValueError("Cannot generate negative numbers")
