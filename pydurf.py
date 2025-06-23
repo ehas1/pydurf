@@ -79,10 +79,7 @@ class PyDurf:
             
         Returns:
             str: PyDurf expression that evaluates to the input text
-            
-        Example:
-            >>> PyDurf.encode_advanced("hi")
-            'str(hash)[...]+str(len)[...]'
+        
         """
         parts = []
         for c in text.lower():  # Convert to lowercase since our map only has lowercase
