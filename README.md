@@ -4,6 +4,8 @@ Python esoteric programming using len(), bool(), and list operations -- inspired
 
 PyDurf is an esoteric Python dialect that generates valid Python code using only builtin functions and a minimal character set. It's inspired by @wanquizhu but takes a different approach by leveraging Python's builtin function string representations. It's been a ton of fun exploring this and I hope you find it enjoyable. 
 
+Have fun & let me know what you think!
+
 
 ## Overview
 
