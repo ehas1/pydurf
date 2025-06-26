@@ -92,7 +92,7 @@ class PyDurf:
 
 
 def demo():
-    """Run a demonstration of PyDurf encoding methods."""
+    """Runs demo"""
     test_cases = ["Hello", "Python", "1234", "!@#$"]
     
     print("PyDurf Encoding Demonstration")
