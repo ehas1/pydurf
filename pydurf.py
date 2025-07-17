@@ -1,6 +1,6 @@
 class PyDurf:
     
-    # Mapping of characters to their builtin function string expressions
+    # Mapping of characters to their function string expressions
     CHAR_MAP = {
         'a': 'str(str)[len([[],[],[]])]',         # From "class"
         'b': 'str(len)[len([[]])]',               # From "built"
